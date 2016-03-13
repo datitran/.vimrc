@@ -50,6 +50,8 @@ set expandtab
 set autoindent
 " Show a visual line under the cursor's current line
 set cursorline
+" Disable cursor blink
+set gcr=a:blinkon0
 " Show the matching part of the pair for [] {} and ()
 set showmatch
 " Set default encoding to UTF-8
