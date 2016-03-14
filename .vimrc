@@ -126,8 +126,11 @@ endif
 
 " Backup and swap files
 
-set backupdir^=~/.vim/_backup//    " where to put backup files.
-set directory^=~/.vim/_temp//      " where to put swap files.
+" Create folders for backup and swap files first
+" mkdir ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo
+set undodir=~/.vim/.undo//
+set backupdir=~/.vim/.backup//
+set directory=~/.vim/.swp//
 
 " Python specific settings
 au BufNewFile,BufRead *.py
