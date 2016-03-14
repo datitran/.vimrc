@@ -124,6 +124,11 @@ if has("gui_running")
   endif
 endif
 
+" Backup and swap files
+
+set backupdir^=~/.vim/_backup//    " where to put backup files.
+set directory^=~/.vim/_temp//      " where to put swap files.
+
 " Python specific settings
 au BufNewFile,BufRead *.py
     \ set tabstop=4 " Set tabs to have 4 spaces
