@@ -88,8 +88,8 @@ let g:indent_guides_start_level = 2
 let g:indent_guides_auto_colors = 1
 " Control the transparency of the color
 let g:indent_guides_color_change_percent = 2
-" Exclude some files from indent guide
-let g:indent_guides_exclude_filetypes = ['help', 'txt', 'sql', 'sh']
+" Exclude some files from indent guide, do :set filetype? for additional types
+let g:indent_guides_exclude_filetypes = ['help', 'text', 'sql', 'sh']
 
 " Searching
 " Highlight matches
