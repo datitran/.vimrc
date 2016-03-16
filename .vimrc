@@ -63,10 +63,18 @@ endif
 " Set theme and colorscheme
 let g:seoul256_background = 233
 colo seoul256
-" Set differnt theme for GUI
-if has('gui_running')
-  colo solarized
-  set background=light
+" Set different theme for GUI and background depending on time
+let hour = strftime("%H")
+if 6 <= hour && hour < 18
+  if has('gui_running')
+    colo solarized
+    set background=light
+  endif
+else
+  if has('gui_running')
+    colo solarized
+    set background=dark
+  endif
 endif
 " Set fonttype and size
 set guifont=Input\ Mono\ Condensed:h13
@@ -89,7 +97,9 @@ let g:indent_guides_auto_colors = 1
 " Control the transparency of the color
 let g:indent_guides_color_change_percent = 2
 " Exclude some files from indent guide, do :set filetype? for additional types
-let g:indent_guides_exclude_filetypes = ['help', 'text', 'sql', 'sh']
+let g:indent_guides_exclude_filetypes = ['help', 'text', 'sql', 'sh', 'vim']
+" Toggle indent guide for python only once
+"autocmd! FileType python IndentGuidesToggle
 
 " Searching
 " Highlight matches
