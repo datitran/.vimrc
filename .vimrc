@@ -21,10 +21,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'ajh17/vimcompletesme'
-Plugin 'yggdroot/indentline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -78,20 +78,18 @@ let g:ctrlp_max_files = 25000
 let g:ctrlp_working_path_mode = 0
 " Relative path if invoking ctrlp
 let g:ctrlp_default_input = 1
-" Activate indentLine
-let g:indentLine_enabled = 1
-" Leading space is "."
-"let g:indentLine_leadingSpaceChar = '.'
-" Enable leading spaces
-"let g:indentLine_leadingSpaceEnabled = 1
-" Show first indent level
-let g:indentLine_showFirstIndentLevel = 1
-let g:indentLine_first_char = "|"
-"let g:indentLine_char = ""
-" Somehow allowed fileType does not work, i.e. use fileTypeExclude
-let g:indentLine_fileType = []
-let g:indentLine_fileTypeExclude = ['text', 'sh', 'sql']
-let g:indentLine_color_gui = '#ff0000'
+" Enable indent guides on startup
+let g:indent_guides_enable_on_vim_startup = 1
+" Reduce guide size
+let g:indent_guides_guide_size = 1
+" Start at different level
+let g:indent_guides_start_level = 2
+" Autocolor the indent guide
+let g:indent_guides_auto_colors = 1
+" Control the transparency of the color
+let g:indent_guides_color_change_percent = 2
+" Exclude some files from indent guide
+let g:indent_guides_exclude_filetypes = ['help', 'txt', 'sql', 'sh']
 
 " Searching
 " Highlight matches
