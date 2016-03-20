@@ -156,6 +156,19 @@ set undodir=~/.vim/.undo//
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swp//
 
+" User defined functions
+" Set a ruler and highlight those characters that are over the ruler
+function ShowRuler()
+  setlocal colorcolumn=80
+  call matchadd('ErrorMsg', '\%>80v.\+', -1)
+endfunction
+
+" Disable ruler and unhighlight those matches
+function DisableRuler()
+  setlocal colorcolumn=
+  call clearmatches()
+endfunction
+
 " Python specific settings
 au BufNewFile,BufRead *.py
     \ set tabstop=4 " Set tabs to have 4 spaces
