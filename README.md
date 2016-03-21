@@ -11,5 +11,17 @@ control of configs, less unused plugins and a higher learning curve.
 4. I store all the backup and swap files in a central folder i.e. use this command `mkdir ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo` to create those directories.
 5. Clone the `.vimrc` in your root folder and then run `:PluginInstall` in VIM.
 
+#### Screenshots
+
+<p align="center">
+  <b>Morning Theme  (6AM to 6PM)</b>
+  <img src="http://i.imgur.com/L4XeB2h.png">
+</p>
+
+<p align="center">
+  <b>Night Theme</b>
+  <img src="http://i.imgur.com/S2A7Jyd.png">
+</p>
+
 #### Helpful links
 - [http://vimawesome.com/](http://vimawesome.com/)
