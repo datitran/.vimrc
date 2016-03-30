@@ -56,6 +56,8 @@ set expandtab
 set autoindent
 " Show a visual line under the cursor's current line
 set cursorline
+" Show a vertical line at the cursor's current line
+set cursorline cursorcolumn
 " Disable cursor blink
 set gcr=a:blinkon0
 " Show the matching part of the pair for [] {} and ()
