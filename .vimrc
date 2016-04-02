@@ -29,6 +29,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'godlygeek/tabular'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'shougo/neocomplete.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
