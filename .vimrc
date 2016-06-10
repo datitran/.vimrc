@@ -31,6 +31,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'shougo/neocomplete.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'nvie/vim-flake8'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
